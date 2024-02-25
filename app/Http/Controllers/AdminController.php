@@ -18,7 +18,7 @@ class AdminController extends Controller
 
             if($account_type == 'user')
             {
-                return view('dashboard');
+                return view('home.index');
             }
             else if($account_type == 'admin')
             {
