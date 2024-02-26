@@ -38,10 +38,16 @@
                     <td>
                         <img src="room/{{$data->image}}" width="200px">
                     </td>
+                    <td>
+                        <a onclick="return confirm('Are you sure!')" href="{{url('room_delete',$data->id)}}" class="btn btn-danger">Delete</a>
+                    </td>
+                    <td>
+                        <a href="{{url('room_update',$data->id)}}" class="btn btn-warning">Update</a>
+                    </td>
+
                 </tr>
 
                 @endforeach
-
 
             </table>
 
