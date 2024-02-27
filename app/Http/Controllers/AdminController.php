@@ -20,11 +20,13 @@ class AdminController extends Controller
 
             if($account_type == 'user')
             {
-                return view('home.index');
+                $room = Room::all();
+                return view('home.index',compact('room'));
             }
             else if($account_type == 'admin')
             {
-                return view('admin.index');
+                $room = Room::all();
+                return view('admin.index',compact('room'));
             }
             else
             {
@@ -35,7 +37,9 @@ class AdminController extends Controller
 
     public function home()
     {
-        return view('home.index');
+        $room = Room::all();
+
+        return view('home.index',compact('room'));
     }
 
 
