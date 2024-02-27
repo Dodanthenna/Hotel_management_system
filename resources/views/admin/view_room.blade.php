@@ -22,7 +22,7 @@
                 <tr>
                     <th>Room Title</th>
                     <th>Description</th>
-                    <th>Orice</th>
+                    <th>Price</th>
                     <th>WIFI</th>
                     <th>Room Type</th>
                     <th>Image</th>
