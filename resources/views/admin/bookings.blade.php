@@ -43,13 +43,32 @@
                     <td>{{$data->phone}}</td>
                     <td>{{$data->start_date}}</td>
                     <td>{{$data->end_date}}</td>
-                    <td>{{$data->status}}</td>
+                    <td>
+                        @if($data->status == 'approve')
+                        <span style="color: skyblue">Approved</span>
+
+                        @endif
+
+                        @if($data->status == 'rejected')
+                        <span style="color: red">Rejected</span>
+
+                        @endif
+
+                        @if($data->status == 'waiting')
+                        <span style="color: yellow">Waiting</span>
+
+                        @endif
+
+                    </td>
                     <td>{{$data->room->room_title}}</td>
                     <td>{{$data->room->price}}</td>
                     <td><img style="width: 200px" src="/room/{{$data->room->image}}" alt=""></td>
 
                     <td><a onclick="return confirm('Are you sure!')" class="btn btn-danger" href="{{url('delete_bookings',$data->id)}}">Delete</a></td>
 
+                    <td><a class="btn btn-success" href="{{url('approve_book',$data->id)}}">Approve</a></td>
+
+                    <td><a class="btn btn-warning" href="{{url('reject_book',$data->id)}}">Reject</a></td>
 
 
 
