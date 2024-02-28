@@ -19,7 +19,7 @@
         <div class="page-header">
           <div class="container-fluid">
 
-            <h1 style="font-size: 50px; font-weight: bolder; color:white;">Gallary</h1>
+            <h1 style="font-size: 40px; font-weight: bold; ">Gellary</h1>
 
 
             <div class="row">

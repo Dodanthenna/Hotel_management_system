@@ -1,6 +1,7 @@
  <!-- header inner -->
+
  <div class="header">
-    <div class="container">
+    <div class="container"  style="padding-bottom: 50px;">
        <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
              <div class="full">
@@ -22,19 +23,17 @@
                          <a class="nav-link" href="{{url('/')}}">Home</a>
                       </li>
                       <li class="nav-item">
-                         <a class="nav-link" href="about.html">About</a>
+                         <a class="nav-link" href="#about">About</a>
                       </li>
                       <li class="nav-item">
-                         <a class="nav-link" href="room.html">Our room</a>
+                         <a class="nav-link" href="#our_room">Our room</a>
                       </li>
                       <li class="nav-item">
-                         <a class="nav-link" href="gallery.html">Gallery</a>
+                         <a class="nav-link" href="#gallery">Gallery</a>
                       </li>
                       <li class="nav-item">
-                         <a class="nav-link" href="contact.html">Contact Us</a>
+                         <a class="nav-link" href="#contact">Contact Us</a>
                       </li>
-
-
 
                      @if (Route::has('login'))
 

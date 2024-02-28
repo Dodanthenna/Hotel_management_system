@@ -18,19 +18,24 @@
         <div class="page-header">
           <div class="container-fluid">
 
-            <table class="">
-                <tr>
-                    <th>Room Title</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>WIFI</th>
-                    <th>Room Type</th>
-                    <th>Image</th>
-                </tr>
-                @foreach ($data as $data)
+            <h1 style="font-size: 40px; font-weight: bold; ">Rooms</h1>
 
+            <table class="table table-dark table-striped">
+                <thead>
                 <tr>
-                    <td>{{$data->room_title}}</td>
+                    <th scope="col">Room Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">WIFI</th>
+                    <th scope="col">Room Type</th>
+                    <th scope="col">Image</th>
+                </tr>
+                </thead>
+
+                @foreach ($data as $data)
+                <tbody>
+                <tr>
+                    <td scope="row">{{$data->room_title}}</td>
                     <td>{!! Str::limit($data->description,150)!!}</td>
                     <td>{{$data->price}}$</td>
                     <td>{{$data->wifi}}</td>
@@ -46,7 +51,7 @@
                     </td>
 
                 </tr>
-
+                </tbody>
                 @endforeach
 
             </table>

@@ -1,4 +1,4 @@
-<div class="about">
+<div class="about" id="about">
     <div class="container-fluid">
        <div class="row">
           <div class="col-md-5">

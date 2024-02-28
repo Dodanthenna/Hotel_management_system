@@ -2,6 +2,8 @@
 <html>
   <head>
 
+    <base href="/public">
+
     @include('admin.css')
 
     <style>
@@ -36,48 +38,64 @@
             <h1 style="font-size: 40px; font-weight: bold; ">Add Rooms</h1>
 
             <div>
-                <form action="{{url('add_room')}}" method="post" enctype="multipart/form-data">
+                <form class="form-horizontal" action="{{url('add_room')}}" method="post" enctype="multipart/form-data">
 
                     @csrf
 
-                    <div class="form_div">
-                        <label>Room Title</label>
-                        <input type="text" name="title">
+
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label">Room Title</label>
+                        <div class="col-sm-7">
+                            <input type="text" name="title" class="form-control" style="background: transparent; border: 1px solid #444951;">
+                        </div>
                     </div>
 
-                    <div class="form_div">
-                        <label>Description</label>
-                        <textarea name="description"></textarea>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label">Description</label>
+                        <div class="col-sm-7">
+                            <textarea name="description" class="form-control" style="background: transparent; border: 1px solid #444951;"></textarea>
+                        </div>
                     </div>
 
-                    <div class="form_div">
-                        <label>price</label>
-                        <input type="number" name="price">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label">price</label>
+                        <div class="col-sm-7">
+                            <input type="number" name="price" class="form-control" style="background: transparent; border: 1px solid #444951;">
+                        </div>
                     </div>
 
-                    <div class="form_div">
-                        <label>Room Type</label>
-                        <select name="type">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label">Room Type</label>
+                        <div class="col-sm-7">
+                        <select name="type" class="form-control" style="background: transparent; border: 1px solid #444951;">
                             <option selected value="regular">Regular</option>
                             <option value="premium">Premium</option>
                             <option value="deluxe">Deluxe</option>
                         </select>
                     </div>
+                    </div>
 
-                    <div class="form_div">
-                        <label>Free wifi</label>
-                        <select name="wifi">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label">Free wifi</label>
+                        <div class="col-sm-7">
+                        <select name="wifi" class="form-control" style="background: transparent; border: 1px solid #444951;">
                             <option selected value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
+                        </div>
                     </div>
 
-                    <div class="form_div">
-                        <label>Uplode Image</label>
-                        <input type="file" name="image">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label">Uplode Image</label>
+                        <div class="col-sm-7">
+                            <input type="file" name="image" class="form-control">
+                        </div>
                     </div>
 
-                    <div class="form_div">
+                    <div class="col-sm-7">
                         <input type="submit" value="Add Room" class="btn btn-primary">
                     </div>
 

@@ -46,8 +46,6 @@
 
            <div class="row">
 
-
-
             <div class="col-md-8">
                 <div id="serv_hover"  class="room">
                    <div class="room_img">
@@ -61,12 +59,14 @@
 
                       <h4>Room Type : {{$room->room_type}}</h4>
 
-                      <h4>Price : {{$room->price}}</h4>
+                      <h4>Price : {{$room->price}}$</h4>
 
 
                    </div>
                 </div>
              </div>
+
+
 
              <div class="col-md-4">
 
@@ -120,7 +120,16 @@
                 </div>
 
                 <div style="padding-top: 25px">
-                    <input type="submit" value="Book Room" class="btn btn-primary">
+                    @if (Route::has('login'))
+                    @auth
+                    <input type="submit" value="Book Room" class="btn btn-light" style="color: blue; font-size:20px; width: 200px; border-color: red;">
+
+                    @else
+                    <span style="color: #ff0909">Please log into your account!</span>
+
+                    @endauth
+                    @endif
+
                 </div>
 
             </form>

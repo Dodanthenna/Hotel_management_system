@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>keto</title>
+<title>Hidden Land</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -16,7 +16,7 @@
 <!-- Responsive-->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- fevicon -->
-<link rel="icon" href="images/fevicon.png" type="image/gif" />
+{{-- <link rel="icon" href="images/fevicon.png" type="image/gif" /> --}}
 <!-- Scrollbar Custom CSS -->
 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 <!-- Tweaks for older IEs-->

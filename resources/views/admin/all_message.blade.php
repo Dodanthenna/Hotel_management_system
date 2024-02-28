@@ -17,25 +17,28 @@
         <div class="page-header">
           <div class="container-fluid">
 
-            <table class="">
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Message</th>
+            <h1 style="font-size: 40px; font-weight: bold; ">Message</h1>
 
+            <table class="table table-dark table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Message</th>
                 </tr>
+            </thead>
 
                 @foreach ($data as $data)
-
+                <tbody>
                 <tr>
-                    <td>{{$data->name}}</td>
+                    <td scope="row">{{$data->name}}</td>
                     <td>{{$data->email}}</td>
                     <td>{{$data->phone}}</td>
                     <td>{{$data->message}}</td>
 
                 </tr>
-
+            </tbody>
                 @endforeach
 
             </table>
