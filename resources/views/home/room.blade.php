@@ -4,7 +4,7 @@
           <div class="col-md-12">
              <div class="titlepage">
                 <h2>Our Room</h2>
-                <p>Lorem Ipsum available, but the majority have suffered </p>
+                <p>Enjoy amazing offers , Have a good stay & Awesome packages</p>
              </div>
           </div>
        </div>

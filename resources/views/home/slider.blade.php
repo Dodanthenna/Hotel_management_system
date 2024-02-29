@@ -29,7 +29,7 @@
            <span class="sr-only">Next</span>
            </a>
         </div>
-        <div class="booking_ocline">
+        {{-- <div class="booking_ocline">
            <div class="container">
               <div class="row">
                  <div class="col-md-5">
@@ -56,7 +56,7 @@
                  </div>
               </div>
            </div>
-        </div>
+        </div> --}}
 
     </section>
 
